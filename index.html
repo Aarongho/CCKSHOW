@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCK SHOW</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="landing" class="landing">
+  <h1 class="title">CCK SHOW</h1>
+  <div class="landing-buttons">
+    <button class="btn primary" id="startBtn">START</button>
+    <button class="btn secondary" id="addTeamBtn">ADD TEAM</button>
+  </div>
+</section>
+
+<div id="teamPopup" class="overlay hidden">
+  <div class="popup">
+    <h2>Add Team</h2>
+    <input id="teamNameInput" placeholder="Enter team name">
+    <button class="btn primary" id="saveTeamBtn">ADD</button>
+  </div>
+</div>
+
+<section id="gameContainer" class="hidden">
+  <div class="navbar" id="navbar"></div>
+  <div id="board" class="board"></div>
+  <div id="nextRound" class="next-round hidden">➜</div>
+
+  <div class="leaderboard">
+    <h3>Leaderboard</h3>
+    <ul id="leaderboardList"></ul>
+  </div>
+
+  <div class="controls">
+    <button class="btn secondary" id="clearAllBtn">CLEAR ALL</button>
+    <button class="btn secondary" id="wipeAllBtn">WIPE ALL</button>
+  </div>
+</section>
+
+<div id="questionView" class="overlay hidden">
+  <div class="question-card">
+    <span class="close-btn" id="closeQuestion">✕</span>
+    <div id="questionText" class="question-text"></div>
+
+    <div class="question-actions">
+      <button class="btn primary" id="addPointBtn">ADD POINT</button>
+    </div>
+
+
+    <div id="pointPanel" class="point-panel hidden"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
